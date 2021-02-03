@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <article>
+        <h3></h3>
+        <img>
+        <p></p>
+        <p></p>
+    </article>
+    <script>
+        window.addEventListener("load", start);
+
+        function start() {
+            document.querySelector("h3").innerHTML = dyr.navn;
+            document.querySelector("p:first-of-type").innerHTML = dyr.type;
+            document.querySelector("p:last-of-type").innerHTML = dyr.levested;
+            document.querySelector("img").src = dyr.billede;
+            document.querySelector("img").alt = dyr.navn;
+
+
+        };
+
+        let dyr = {
+            "navn": "gris",
+            "type": "pattedyr",
+            "billede": "http://mabe-kea.dk/E19/pics/pig.png",
+            "levested": "svinefarme"
+        }
+
+        let dyret = `Dyr: ${dyr.navn} type: ${dyr.type} levested: ${dyr.levested}`;
+
+    </script>
+</body>
+
+</html>
